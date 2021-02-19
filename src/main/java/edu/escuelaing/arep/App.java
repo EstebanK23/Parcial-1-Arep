@@ -13,8 +13,6 @@ public class App {
         get("/", (req, res) -> {
             Double number = Double.parseDouble(req.queryParams("value"));
             String function = req.queryParams("Operation");
-            System.out.println("entro get");
-            System.out.println(Calculator.Trigonometricas(number,function));
             return Calculator.Trigonometricas(number,function);
 
         });
