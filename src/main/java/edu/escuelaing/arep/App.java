@@ -24,7 +24,7 @@ public class App {
     **/
     static int getPort() {
         if (System.getenv("PORT") != null) {
-            System.out.println("entro port");
+            
             return Integer.parseInt(System.getenv("PORT"));
         }
     return 4567;
